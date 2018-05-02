@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    
+    <body>
+        <div class="AlbumPicture">
+            <a href="Album1.html"><img src="albums/BTR-album.jpg" style="height: 300px; width: 300px;"></a>
+        </div>
+        
+        <li>
+            <button href="" class="button">Add to Playlist</button>
+            <button href="" class="button">Buy</button>
+        </li>
+        
+        <h2 id="selected"></h2>
+        
+        <li>
+            <audio controls>
+              <source src="" type="audio/mp3">
+            Your browser does not support the audio element.
+            </audio>
+        </li>
+        
+        <script>
+            function selectSong(songName) {
+                document.getElementById('selected').innerHTML = songName;
+            }
+        </script>
+        
+        <table class="musicTable" style="width:50%;">
+            <tr class="musicItem" onclick="selectSong('Windows Down')">
+                <td>
+                    Windows Down
+                </td>
+                <td>
+                    3:30
+                </td>
+            </tr>
+            
+            <tr class="musicItem" onclick="selectSong('Boyfriend')">
+                <td>
+                    Boyfriend
+                </td>
+                <td>
+                    4:41
+                </td>
+            </tr>
+            
+            <tr class="musicItem" onclick="selectSong('Til I Forget About You')">
+                <td>
+                    Til I Forget About You
+                </td>
+                <td>
+                    4:38
+                </td>
+            </tr>
+            
+            <tr class="musicItem" onclick="selectSong('Any Kind Of Guy')">
+                <td>
+                    Any Kind Of Guy
+                </td>
+                <td>
+                    3:38
+                </td>
+            </tr>
+            
+            <tr class="musicItem" onclick="selectSong('Worldwide')">
+                <td>
+                    Worldwide
+                </td>
+                <td>
+                    3:02
+                </td>
+            </tr>
+            
+        </table>
+        
+    </body>
+</html>

@@ -15,41 +15,49 @@
         
         <span/>
         
-        <div class="navbar">
-            <ul>
-                <a href="loginPage.html" style="color:azure">Login</a>
-                <a href="index.html" style="color:azure">Main</a>
-            </ul>
-        </div>
-        
         <div class="body">
             <p>
                 Welcome to MusicStorm, where your music is lit and only gets better.
             </p>
             
-            <span/>
-            
-            <h3>Lorem ipsum</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet accumsan nulla, vitae fermentum arcu. Donec consequat est id erat viverra tempus. Nunc lacinia enim enim, in bibendum augue fermentum pretium. Quisque rhoncus sed justo at molestie. Integer risus nulla, porta sodales velit quis, porta hendrerit mauris. In ornare augue ut nisl rhoncus tincidunt. Sed dapibus sapien eget dui efficitur, eget placerat turpis tincidunt. Proin feugiat bibendum velit ut hendrerit. Cras ac aliquam tortor. Ut id congue nunc.
-            </p>
-            
-            <span/>
-            
-            <h3>Nulla porttitor</h3>
-            <p>
-                Nulla porttitor leo ex, quis semper nisl elementum et. Fusce vestibulum dolor nec accumsan convallis. Donec vitae suscipit ligula, vel tempor eros. Nulla eget pellentesque tellus, eget consectetur neque. Vivamus finibus odio a aliquet scelerisque. Morbi vitae rhoncus mi. Duis venenatis lobortis sapien nec hendrerit. Maecenas feugiat nunc lorem, in rutrum diam feugiat ut. Praesent blandit ipsum id pretium pharetra. Cras luctus mi sed dictum pretium. Aenean laoreet diam erat, accumsan vehicula dolor suscipit at. Quisque facilisis nunc posuere semper tincidunt. Suspendisse gravida est tortor. Nullam non iaculis nisl.
-            </p>
-            
-            <span/>
-            
-            <h3>Nulla facilisis</h3>
-            <p>
-                Nulla facilisis mi eros, sed elementum lacus consectetur ac. Aliquam cursus maximus dui, eget pulvinar neque volutpat in. Sed aliquam mauris sit amet eros rhoncus pulvinar. In quis varius mi, quis convallis mi. Mauris mi orci, bibendum non tincidunt id, scelerisque sit amet sem. Maecenas non eros convallis, volutpat metus eget, congue erat. Donec ullamcorper nisi at porta sodales. Aliquam a est ut velit pellentesque gravida.
-            </p>
-            <p>
-                Pellentesque porttitor nisi sed arcu suscipit scelerisque eget vel risus. Nam pellentesque, metus at porta egestas, purus ex malesuada ante, eget interdum dui enim ut turpis. Praesent dignissim dui leo, in tristique ex malesuada eleifend. Phasellus lobortis ante enim, non condimentum lorem finibus et. Quisque gravida sapien sit amet varius ultrices. Integer dapibus felis in ipsum elementum, nec aliquam eros ultrices. Nulla iaculis dolor mattis, pretium ex nec, fringilla massa. Ut leo risus, facilisis posuere commodo vel, finibus et diam.
-            </p>
+            <div class="inputArea">
+                <a href="https://www.facebook.com/"><img src="facebook-login.png" style="width:20%;height:75%;border:0;"></a>
+                <br>
+                <a href="https://www.google.com/"><img src="login-google.png" style="width:16%;height:75%;border:0;"></a>
+
+                <br>
+                <br>
+
+                <h3>Username</h3>
+                <input type="text" placeholder="Username" id="usr">
+                <h3>Password</h3>
+                <input type="password" placeholder="password" id="pwd">
+
+                <br>
+                <br>
+
+                <button type="submit" onclick="submitBtn();">Submit</button>
+
+                <br>
+                <br>
+
+                <a href="">Sign Up</a>
+                <a href="">Forgot Password?</a>
+
+                <script>
+                    function submitBtn(){
+                        var usrName = document.getElementById("usr").value;
+                        document.getElementById("usr").value = "";
+                        var pass = document.getElementById("pwd").value;
+                        document.getElementById("pwd").value = "";
+
+                        if(usrName == "test" && pass == "test")
+                            window.open("connected.html");
+                        else
+                            alert("Incorrect username or password");
+                    }
+                </script>
+            </div>
         </div>
     </body>
     
